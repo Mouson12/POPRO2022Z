@@ -12,6 +12,11 @@ int NWD( int a , int b )
 }
 int main()
 {
-    printf("%d",NWD(2,4));
+    fflush(stdin);//szyszczenie bufora wejściowego
+    int a=0,b=0;
+    printf("Wpisz dwie liczby, dla ktorych chcesz uzyskac nwd :\n");
+    scanf("%d %d",&a,&b);
+    printf("nwd tych liczb to : %d",NWD(a,b));
     return 0;
+    
 }
